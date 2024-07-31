@@ -30,3 +30,36 @@ Add hozzá a privát kulcsot az SSH agenthez:
 ``
 Ha a kapcsolat sikeres, a következő üzenetet kell látnod:
 ``Hi username! You've successfully authenticated, but GitHub does not provide shell access.``
+
+Használd a git restore --staged parancsot, hogy eltávolítsd a fájlt a staging area-ból:
+
+
+``git restore --staged blue.txt``
+
+``git restore blue.txt``
+
+git status
+git diff blue.txt
+
+
+## Barnc kezelés
+
+`git branch [branch_name]` - létrehoz egy új branch-et
+
+`git branch` - listázza a branch-eket
+
+`git checkout [branch_name]` - átváltás a megadott branch-re
+
+`git checkout -b [branch_name]` - létrehoz egy új branch-et és átvált rá
+
+`git merge [branch_name]` - összefűzi a megadott branch-et a jelenlegivel
+
+`git branch -d [branch_name]` - törli a megadott branch-et
+
+`git branch -D [branch_name]` - erőltetett törlés a megadott branch-ről
+
+`git branch -m [new_branch_name]` - átnevezi a jelenlegi branch-et
+
+`git branch -a` - listázza az összes branch-et
+
+`git branch -r` - listázza a távoli branch-eket
